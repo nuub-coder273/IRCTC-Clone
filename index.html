@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page, IRCTC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>IRCTC Train Search</h1>
+        <nav>
+            <ul>
+                <li><a target="_blank" href="https://www.irctc.co.in/nget/train-search">Home</a></li>
+                <li><a target="_blank" href="https://www.irctc.co.in/nget/train-search">Contact Us</a></li>
+                <li><a target="_blank" href="https://www.irctc.co.in/nget/train-search">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Search for Trains</h2>
+            <form id="train-search-form">
+                <label for="fromStation">From:</label>
+                <input type="text" id="fromStation" name="from" required placeholder="eg. Bhubaneswar">
+
+                <label for="toStation">To:</label>
+                <input type="text" id="toStation" name="to" required placeholder="eg. Ranchi">
+
+                <label for="journeyDate">Journey Date:</label>
+                <input type="text" id="journeyDate" name="date" required pattern="dd-mm-yyyy" placeholder="dd-mm-yyyy">
+
+                <label for="classType">Class:</label>
+                <select id="classType" name="class">
+                    <option value="Sleeper">Sleeper</option>
+                    <option value="3AC">3AC</option>
+                    <option value="2AC">2AC</option>
+                    <option value="1AC">1AC</option>
+                </select>
+
+                <button type="submit">Search Trains</button>
+            </form>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IRCTC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
